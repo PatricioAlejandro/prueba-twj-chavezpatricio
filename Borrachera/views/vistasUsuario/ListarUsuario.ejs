@@ -1,0 +1,46 @@
+<h1>Lista de Usuarios</h1>
+
+<div class="row">
+    <div class="col-sm-8">
+        <p>Aqui se listan todos los usuarios del sistema.</p>
+    </div>
+    <div class="col-sm-4">
+        <a href="/CrearUsuario" class="btn btn-block btn-success">
+           Crear Usuario
+       </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<% for(var i=0; i < usuarios.length; i++) {%>
+    <div class="panel panel-primary">
+        <div class="row ma-margen-top-bottom">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+                <div class="text-center ma-borde ma-padding-top-bottom">
+                    <h1><%= usuarios[i].nombre %></h1>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 text-center">
+                <div class="text-center ma-borde" style="margin-top: 40px;">
+                    <p>
+                        <%= usuarios[i].nombre %>
+                            <%= usuarios[i].ciudadResidencia %>
+
+                    </p>
+                    <p>
+                        <%= usuarios[i].fechaNacimiento %>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+
+    </div>
+    <% }%>

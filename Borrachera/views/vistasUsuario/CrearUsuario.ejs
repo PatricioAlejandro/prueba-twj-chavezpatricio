@@ -1,0 +1,26 @@
+<h2>Crea un usuario</h2>
+<form action="/Usuario/CrearUsuario" method="post">
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" placeholder="Ingrese su Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+        <label>Ciudad Residencia</label>
+        <input type="text" class="form-control" placeholder="Ingrese su Ciudad de Residencia" name="ciudadResidencia">
+    </div>
+
+    <div class="form-group">
+        <label>Fecha</label>
+        <div class="input-group">
+            <input type='text' class="form-control" placeholder="Ingrese la fecha con formato yyyy-mm-dd" name="fechaNacimiento" />
+            <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-success">Crear Usuario :)</button>
+</form>
